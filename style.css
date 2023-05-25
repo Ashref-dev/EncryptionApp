@@ -1,0 +1,87 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: black;
+  font-size: 11pt;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.black10pointcourier {
+  font-family: "courier";
+  color: black;
+  font-size: 10pt;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dropzone {
+  border: 10px dashed gray;
+  width: 20%;
+  padding: 2% 2% 5% 2%;
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+
+.divTablefullwidth {
+  display: table;
+  width: 100%;
+}
+
+.divTable {
+  display: table;
+}
+
+.divTableRow {
+  display: table-row;
+}
+
+.divTableCell {
+  display: table-cell;
+  padding: 3px 3px;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.greenspan {
+  color: green;
+}
+
+.redspan {
+  color: red;
+}
