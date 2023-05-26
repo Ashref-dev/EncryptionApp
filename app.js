@@ -2,6 +2,7 @@ var mode = null;
 var objFile = null;
 switchdiv("encrypt");
 
+
 function switchdiv(t) {
   if (t == "encrypt") {
     divEncryptfile.style.display = "flex";
@@ -20,7 +21,7 @@ function switchdiv(t) {
 
 function encvalidate() {
   if (
-    txtEncpassphrase.value.length >= 8 &&
+    txtEncpassphrase.value.length >= 2 &&
     txtEncpassphrase.value == txtEncpassphraseretype.value
   ) {
     spnCheckretype.classList.add("greenspan");
@@ -33,7 +34,7 @@ function encvalidate() {
   }
 
   if (
-    txtEncpassphrase.value.length >= 8 &&
+    txtEncpassphrase.value.length >= 2 &&
     txtEncpassphrase.value == txtEncpassphraseretype.value &&
     objFile
   ) {
