@@ -1,6 +1,7 @@
 :root {
   --blue: #3a00e5;
   --blueShade: #f7f5ff;
+  --blueLinks: #84a5ff;
   --white: #ffffff;
 }
 *,
@@ -21,7 +22,7 @@ video {
 }
 a {
   text-decoration: underline !important;
-  color: #84a5ff !important;
+  color: var(--blueLinks) !important;
 }
 .custom-color-shade {
   background-color: var(--blueShade);

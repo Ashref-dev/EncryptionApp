@@ -1,8 +1,8 @@
-# Encryption and Decryption App
+# Let's Encrypt 
 
-Welcome to the Encryption and Decryption App repository! 🔒
+Welcome to the Let's Encrypt App repository! 🔒
 
-<img src="https://i.ibb.co/bb7cjMF/og.jpg" alt="encryption and decryption app" width="50%" height="50%">
+<img src="https://i.ibb.co/2FBVgJp/og.jpg" alt="encryption and decryption app" width="70%" height="70%">
 
 ## About
 
@@ -19,7 +19,7 @@ The Encryption and Decryption App is a free and user-friendly web application th
 
 Using the Encryption and Decryption App is simple:
 
-1. Visit the web application by following this link: [encryption-decryption-app.com](https://encryption-decryption-app.com/).
+1. Visit the web application by following this link: [ccrypt.netlify.app](https://ccrypt.netlify.app/).
 2. To encrypt a file:
    - Click the "Select File" button or drag and drop a file onto the designated area.
    - Enter a password in the provided field.
