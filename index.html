@@ -98,7 +98,6 @@
           <div class="col-md-6">
             <div class="h-100 p-5 text-bg-dark rounded-4">
               <!-- the dropzone -->
-
               <div
                 class="dropzone p-3 p-md-5"
                 id="encdropzone"
@@ -112,7 +111,23 @@
                   <a onclick="javascript:encfileElem.click();">here</a> to
                   select file.
                 </p>
-                <p><span id="spnencfilename"></span></p>
+                <p>
+                  <span
+                    id="spnencfilename"
+                    style="font-style: italic; font-weight: 100"
+                    >file name will appear here</span
+                  >
+                </p>
+                <div class="w-100 d-flex justify-content-center">
+                  <lottie-player
+                    src="https://assets4.lottiefiles.com/packages/lf20_tijj0wnj.json"
+                    background="transparent"
+                    speed="1"
+                    style="max-width: 100%; width: 180px; height: 100%"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </div>
               </div>
               <input
                 type="file"
@@ -160,7 +175,7 @@
                 <button
                   id="btnEncrypt"
                   onclick="javascript:encryptfile();"
-                  class="btn btn-primary"
+                  class="btn btn-primary w-100 desaturate"
                   disabled
                 >
                   Encrypt File
@@ -170,7 +185,7 @@
               <span id="spnEncstatus"></span>
 
               <a id="aEncsavefile" hidden
-                ><button class="btn btn-primary w-100">
+                ><button class="btn btn-primary w-100 desaturate">
                   Save Encrypted File
                 </button></a
               >
@@ -199,7 +214,23 @@
                     >
                     to select file.
                   </p>
-                  <p><span id="spndecfilename"></span></p>
+                  <p>
+                    <span
+                      id="spndecfilename"
+                      style="font-style: italic; font-weight: 100"
+                      >file name will appear here</span
+                    >
+                  </p>
+                  <div class="w-100 d-flex justify-content-center">
+                    <lottie-player
+                      src="https://assets4.lottiefiles.com/packages/lf20_tijj0wnj.json"
+                      background="transparent"
+                      speed="1"
+                      style="max-width: 100%; width: 180px; height: 100%"
+                      loop
+                      autoplay
+                    ></lottie-player>
+                  </div>
                 </div>
                 <input
                   type="file"
@@ -230,14 +261,16 @@
               <button
                 id="btnDecrypt"
                 onclick="javascript:decryptfile();"
-                class="btn btn-primary"
+                class="btn btn-primary desaturate"
                 disabled
               >
                 Decrypt File
               </button>
               <span id="spnDecstatus"></span>
               <a id="aDecsavefile" hidden
-                ><button class="btn btn-primary">Save Decrypted File</button></a
+                ><button class="btn btn-primary desaturate">
+                  Save Decrypted File
+                </button></a
               >
             </div>
           </div>
@@ -247,5 +280,7 @@
         © 2023 Let's Encrypt
       </footer>
     </div>
+    <!-- lottie import  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

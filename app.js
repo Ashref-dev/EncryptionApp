@@ -298,8 +298,8 @@ async function decryptfile() {
   var blob = new Blob([plaintextbytes], { type: "application/download" });
   var blobUrl = URL.createObjectURL(blob);
   aDecsavefile.href = blobUrl;
-  aDecsavefile.download = objFile.name + ".dec";
-
+  aDecsavefile.download =
+    objFile.name.substring(0, objFile.name.lastIndexOf(".")) || objFile.name;
   spnDecstatus.classList.add("greenspan");
   spnDecstatus.innerHTML = "<p>File decrypted.</p>";
   aDecsavefile.hidden = false;
