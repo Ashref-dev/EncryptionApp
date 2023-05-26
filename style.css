@@ -1,5 +1,6 @@
 :root {
-  --blue: #1e90ff;
+  --blue: #3a00e5;
+  --blueShade: #f7f5ff;
   --white: #ffffff;
 }
 *,
@@ -18,64 +19,19 @@ video {
   display: block;
   max-width: 100%;
 }
-
-body {
-  color: black;
-  font-size: 11pt;
+a {
+  text-decoration: underline !important;
+  color: #84a5ff !important;
 }
-
-a,
-a:link,
-a:visited,
-a:active {
-  color: blue;
-  text-decoration: underline;
+.custom-color-shade {
+  background-color: var(--blueShade);
 }
-
-a:hover {
-  cursor: pointer;
-  color: red;
-}
-
-.black10pointcourier {
-  font-family: "courier";
-  color: black;
-  font-size: 10pt;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .dropzone {
   border: 4px dashed gray;
   width: 100%;
   height: 100%;
-  padding: 2% 2% 5% 2%;
+
   text-align: center;
-}
-
-.divTablefullwidth {
-  display: table;
-  width: 100%;
-}
-
-.divTable {
-  display: table;
-}
-
-.divTableRow {
-  display: table-row;
-}
-
-.divTableCell {
-  display: table-cell;
-  padding: 3px 3px;
-}
-
-.divTableBody {
-  display: table-row-group;
 }
 
 .greenspan {

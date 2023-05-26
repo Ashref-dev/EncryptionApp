@@ -2,7 +2,6 @@ var mode = null;
 var objFile = null;
 switchdiv("encrypt");
 
-
 function switchdiv(t) {
   if (t == "encrypt") {
     divEncryptfile.style.display = "flex";
