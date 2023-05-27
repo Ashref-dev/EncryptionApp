@@ -19,7 +19,7 @@ The Encryption and Decryption App is a free and user-friendly web application th
 
 Using the Encryption and Decryption App is simple:
 
-1. Visit the web application by following this link: [ccrypt.netlify.app](https://ccrypt.netlify.app/).
+1. Visit the web application by following this link: [encrypt.tn](https://encrypt.tn/).
 2. To encrypt a file:
    - Click the "Select File" button or drag and drop a file onto the designated area.
    - Enter a password in the provided field.
