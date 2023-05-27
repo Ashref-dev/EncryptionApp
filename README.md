@@ -9,6 +9,9 @@ Welcome to the Let's Encrypt App repository! 🔒
 
 The Encryption and Decryption App is a free and user-friendly web application that allows you to encrypt and decrypt files using a password of your choice. Whether you need to protect sensitive data or secure your personal files, this app provides a convenient solution.
 
+Although the final site is different from my initial design in Figma, I'm still satisfied by the result.
+Check out the design <a href="https://www.behance.net/gallery/171655583/Lets-Encrypt-web-app-design-%28Encrypttn%29" target="_blank">on Behance here.</a>
+
 ## Features
 
 - **File Encryption:** Select a file or drag-and-drop it onto the app's interface, then enter a password to encrypt it securely.
@@ -51,4 +54,4 @@ Let's work together to create a secure and user-friendly encryption and decrypti
 - JavaScript
 - JavaScript Crypto Functions
 
-We look forward to your valuable contributions. Happy encrypting and decrypting! 🔐🔓
+I look forward to your valuable contributions. Happy encrypting and decrypting! 🔐🔓
