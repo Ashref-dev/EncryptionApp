@@ -2,7 +2,8 @@
 
 Welcome to the Let's Encrypt App repository! 🔒
 
-<img src="https://i.ibb.co/2FBVgJp/og.jpg" alt="encryption and decryption app" width="70%" height="70%">
+<img src="https://i.ibb.co/NVV4b0P/og2.jpg" alt="encryption and decryption app" style="max-width:100%; width:max(300px,50%);">             
+
 
 ## About
 
@@ -19,7 +20,7 @@ The Encryption and Decryption App is a free and user-friendly web application th
 
 Using the Encryption and Decryption App is simple:
 
-1. Visit the web application by following this link: [encrypt.tn](https://encrypt.tn/).
+1. Visit the web application by following this link: <a href="https://encrypt.tn/" target="_blank">encrypt.tn</a>
 2. To encrypt a file:
    - Click the "Select File" button or drag and drop a file onto the designated area.
    - Enter a password in the provided field.
@@ -29,8 +30,10 @@ Using the Encryption and Decryption App is simple:
    - Enter the password used for encryption.
    - Click the "Decrypt" button to decrypt the file.
 4. Ensure you remember the password used for encryption as it will be required for decryption.
+   
+<img src="https://i.ibb.co/XZngS6B/site-preview-1080browser.jpg" alt="encryption and decryption app" style="max-width:100%; width:max(300px,50%);">      
 
-## Contribution
+## Contribution 
 
 We welcome contributions to enhance the Encryption and Decryption App! Here's how you can get involved:
 
