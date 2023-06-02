@@ -6,20 +6,16 @@ function switchdiv(t) {
   if (t == "encrypt") {
     divEncryptfile.style.display = "flex";
     divDecryptfile.style.display = "none";
-
     btnDivEncrypt.disabled = true;
     btnDivDecrypt.disabled = false;
     mode = "encrypt";
-  }
-  else if (t == "decrypt") {
+  } else if (t == "decrypt") {
     divEncryptfile.style.display = "none";
     divDecryptfile.style.display = "flex";
-
     btnDivEncrypt.disabled = false;
     btnDivDecrypt.disabled = true;
     mode = "decrypt";
   }
-
 }
 
 function encvalidate() {
@@ -47,8 +43,6 @@ function encvalidate() {
   }
 }
 
-
-
 function decvalidate() {
   if (txtDecpassphrase.value.length > 0 && objFile) {
     btnDecrypt.disabled = false;
@@ -56,11 +50,6 @@ function decvalidate() {
     btnDecrypt.disabled = true;
   }
 }
-
-
-
-
-
 
 //drag and drop functions:
 //https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
@@ -152,8 +141,6 @@ function readfile(file) {
   });
 }
 
-
-
 async function encryptfile() {
   btnEncrypt.disabled = true;
 
@@ -190,22 +177,7 @@ async function encryptfile() {
       console.error(err);
     });
   console.log("pbkdf2bytes derived");
-
   pbkdf2bytes = new Uint8Array(pbkdf2bytes);
-
-  function convertToHexString(uint8Array) {
-    let hexString = "";
-    for (let i = 0; i < uint8Array.length; i++) {
-      const hexValue = uint8Array[i].toString(16).padStart(2, "0");
-      hexString += hexValue;
-    }
-    return hexString;
-  }
-  console.log("hhhhyhujiji", convertToHexString(pbkdf2bytes));
-
-  document.getElementById("elhash").innerHTML = convertToHexString(pbkdf2bytes);
-
-
 
   console.log("pbkdf2:", pbkdf2bytes);
 
@@ -249,20 +221,11 @@ async function encryptfile() {
   var blobUrl = URL.createObjectURL(blob);
   aEncsavefile.href = blobUrl;
   aEncsavefile.download = objFile.name + ".enc";
+
   spnEncstatus.classList.add("greenspan");
   spnEncstatus.innerHTML = "<p>File encrypted.</p>";
   aEncsavefile.hidden = false;
-  computeHash.hidden = false;
 }
-
-function showHash() {
-  document.getElementById("elhash").hidden = false;
-}
-
-
-
-
-
 
 async function decryptfile() {
   btnDecrypt.disabled = true;
@@ -303,20 +266,6 @@ async function decryptfile() {
   console.log("pbkdf2bytes derived");
   pbkdf2bytes = new Uint8Array(pbkdf2bytes);
 
-  function convertToHexString(uint8Array) {
-    let hexString = "";
-    for (let i = 0; i < uint8Array.length; i++) {
-      const hexValue = uint8Array[i].toString(16).padStart(2, "0");
-      hexString += hexValue;
-    }
-    return hexString;
-  }
-  console.log("decrypted hashD", convertToHexString(pbkdf2bytes));
-
-  document.getElementById("elhashD").innerHTML = convertToHexString(pbkdf2bytes);
-
-
-
   keybytes = pbkdf2bytes.slice(0, 32);
   ivbytes = pbkdf2bytes.slice(32);
   cipherbytes = cipherbytes.slice(16);
@@ -354,9 +303,4 @@ async function decryptfile() {
   spnDecstatus.classList.add("greenspan");
   spnDecstatus.innerHTML = "<p>File decrypted.</p>";
   aDecsavefile.hidden = false;
-  computeHashD.hidden = false;
-}
-
-function showHashD() {
-  document.getElementById("elhashD").hidden = false;
 }
